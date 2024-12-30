@@ -1,0 +1,592 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ArchitectLibrary
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import ArchitectLibrary
+import CryptoKit
+import Foundation
+import PDFKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import os
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var rootSuperview: UIKit.UIView {
+    get
+  }
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func aspectRatio(_ ratio: CoreFoundation.CGFloat = 1) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func fillSafeContainer(_ margin: CoreFoundation.CGFloat = 0) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func fillVerticallySafe(_ margin: CoreFoundation.CGFloat = 0) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func fillHorizontallySafe(_ margin: CoreFoundation.CGFloat = 0) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func topSafe(_ margin: CoreFoundation.CGFloat = 0) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func bottomSafe(_ margin: CoreFoundation.CGFloat = 0) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func leadingSafe(_ margin: CoreFoundation.CGFloat = 0) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func trailingSafe(_ margin: CoreFoundation.CGFloat = 0) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func compressionResistence(_ priority: UIKit.UILayoutPriority, for axis: UIKit.NSLayoutConstraint.Axis...) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func contentHugging(_ priority: UIKit.UILayoutPriority, for axis: UIKit.NSLayoutConstraint.Axis...) -> Self
+  @_Concurrency.MainActor(unsafe) public func makeRoundBordersObserver() -> Foundation.NSKeyValueObservation
+  @_Concurrency.MainActor(unsafe) public func setTapToEndEditing()
+}
+public protocol Reversable {
+  var reverse: Self { get }
+}
+extension CoreFoundation.CGFloat : ArchitectLibrary.Reversable {
+  public var reverse: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension Swift.Double : ArchitectLibrary.Reversable {
+  public var reverse: Swift.Double {
+    get
+  }
+}
+extension Swift.Int : ArchitectLibrary.Reversable {
+  public var reverse: Swift.Int {
+    get
+  }
+}
+extension Swift.Float : ArchitectLibrary.Reversable {
+  public var reverse: Swift.Float {
+    get
+  }
+}
+extension Foundation.Decimal : ArchitectLibrary.Reversable {
+  public var reverse: Foundation.Decimal {
+    get
+  }
+}
+extension Swift.Bool : ArchitectLibrary.Reversable {
+  public var reverse: Swift.Bool {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UICodeSegmentedControl : UIKit.UISegmentedControl {
+  @_Concurrency.MainActor(unsafe) public func setScaledFont(for state: UIKit.UIControl.State, font: (() -> UIKit.UIFont)?)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(items: [Any]?)
+}
+extension UIKit.UIControl.State : Swift.Hashable {
+}
+extension UIKit.UISegmentedControl {
+  @_Concurrency.MainActor(unsafe) public func updateTextAttribute<T>(_ value: T?, forKey key: Foundation.NSAttributedString.Key, for state: UIKit.UIControl.State)
+  @_Concurrency.MainActor(unsafe) public func updateFont(_ font: UIKit.UIFont?, for state: UIKit.UIControl.State)
+  @_Concurrency.MainActor(unsafe) public func removeTextAttribute(forKey key: Foundation.NSAttributedString.Key, for state: UIKit.UIControl.State)
+}
+public class UIOptionAlert {
+  final public let alert: UIKit.UIAlertController
+  weak public var view: UIKit.UIViewController?
+  public init(title: Swift.String, message: Swift.String, view: UIKit.UIViewController?)
+  @discardableResult
+  public func addAction(style: UIKit.UIAlertAction.Style, title: Swift.String, handler: ((UIKit.UIAlertAction) -> Swift.Void)? = nil) -> Self
+  public func present()
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class NSCodeLayoutConstraint : UIKit.NSLayoutConstraint {
+  @_Concurrency.MainActor(unsafe) weak public var constraint: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) public init(constraint: UIKit.NSLayoutConstraint, style: UIKit.UIFont.TextStyle, maxValue: CoreFoundation.CGFloat?)
+  @_Concurrency.MainActor(unsafe) public init(constraint: UIKit.NSLayoutConstraint, style: UIKit.UIFont.TextStyle, minValue: CoreFoundation.CGFloat?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIPaddingLabel : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) open var padding: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func drawText(in rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var bounds: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ContentSizeObserver : AnyObject {
+  var notificationTokens: [ArchitectLibrary.NotificationToken] { get set }
+  func addContentObserver(andFire fire: Swift.Bool, contentSizeCategoryDidChange completion: @escaping (_ c: UIKit.UIContentSizeCategory) -> Swift.Void)
+}
+extension ArchitectLibrary.ContentSizeObserver where Self : UIKit.UITraitEnvironment {
+  public func addContentObserver(andFire fire: Swift.Bool = true, contentSizeCategoryDidChange completion: @escaping (_ c: UIKit.UIContentSizeCategory) -> Swift.Void)
+}
+extension UIKit.UIFont {
+  public var capAscentHeight: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension UIKit.UIColor {
+  convenience public init(rgb: Swift.UInt32)
+  convenience public init(rgba: Swift.UInt32)
+  convenience public init?(string: Swift.String)
+  public static func dynamic(any anyColor: UIKit.UIColor, dark darkColor: UIKit.UIColor) -> UIKit.UIColor
+  public static func dynamicString(any anyColor: Swift.String, dark darkColor: Swift.String) -> UIKit.UIColor?
+  public static func dynamicRGB(any anyColor: Swift.UInt32, dark darkColor: Swift.UInt32) -> UIKit.UIColor?
+  public static func dynamicRGBA(any anyColor: Swift.UInt32, dark darkColor: Swift.UInt32) -> UIKit.UIColor?
+}
+@_Concurrency.MainActor(unsafe) open class UIContentStackScrollView : ArchitectLibrary.UIContentScrollView<UIKit.UIStackView> {
+  @_Concurrency.MainActor(unsafe) override open var axis: UIKit.NSLayoutConstraint.Axis {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(_ axis: UIKit.NSLayoutConstraint.Axis, alignment: UIKit.UIStackView.Alignment = .fill, spacing: CoreFoundation.CGFloat = 0)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addArrangedSubviews(_ arrengedSubviews: UIKit.UIView...) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addArrangedSubviews(_ arrengedSubviews: [UIKit.UIView]) -> Self
+  @objc deinit
+}
+extension Swift.Collection {
+  public var nilOnEmpty: Self? {
+    get
+  }
+}
+public protocol AssetImage : Swift.RawRepresentable {
+  var image: UIKit.UIImage? { get }
+}
+extension ArchitectLibrary.AssetImage where Self.RawValue == Swift.String {
+  public var image: UIKit.UIImage? {
+    get
+  }
+  public var safeImage: UIKit.UIImage {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIDecimalField : ArchitectLibrary.UIPaddingTextField {
+  public enum PlaceholderType {
+    case never
+    case zero
+    case `default`
+    public static func == (a: ArchitectLibrary.UIDecimalField.PlaceholderType, b: ArchitectLibrary.UIDecimalField.PlaceholderType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public var decimal: Foundation.Decimal {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var maximum: Foundation.Decimal {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var numberStyle: Foundation.NumberFormatter.Style {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var fractionDigits: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var locale: Foundation.Locale {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeholderType: ArchitectLibrary.UIDecimalField.PlaceholderType {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func deleteBackward()
+  @objc @_Concurrency.MainActor(unsafe) public func editingChanged()
+  @objc deinit
+}
+public enum SwapRootVCAnimationType {
+  case push
+  case pop
+  public static func == (a: ArchitectLibrary.SwapRootVCAnimationType, b: ArchitectLibrary.SwapRootVCAnimationType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIWindow {
+  @_Concurrency.MainActor(unsafe) public func swapRootViewController(_ newViewController: UIKit.UIViewController, animationType: ArchitectLibrary.SwapRootVCAnimationType, duration: Foundation.TimeInterval = .pi / 10.0, completion: (() -> Swift.Void)? = nil)
+}
+public protocol KeyValueObserved {
+  var observers: [Foundation.NSKeyValueObservation] { get set }
+}
+extension UIKit.UIImageView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setImage(from urlString: Swift.String, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setImage(from url: Foundation.URL, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask
+  @_Concurrency.MainActor(unsafe) public func setImage(from data: Foundation.Data, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public static func downloadImage(from url: Foundation.URL, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public func layoutTableHeaderFooterView()
+  @_Concurrency.MainActor(unsafe) public func deselectSelectedRow(animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func register<T>(_ cellClass: T.Type) where T : UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) public func register<T>(_ headerFooterCellClass: T.Type) where T : UIKit.UITableViewHeaderFooterView
+  @_Concurrency.MainActor(unsafe) public func dequeueReusableCell<T>(_ cellClass: T.Type) -> T where T : UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) public func dequeueReusableHeaderFooterView<T>(_ cellClass: T.Type) -> T where T : UIKit.UITableViewHeaderFooterView
+}
+extension Swift.Optional {
+  public func required(hint hintExpression: Swift.String? = nil, file: Swift.StaticString = #file, line: Swift.UInt = #line) -> Wrapped
+}
+public enum DispatcherError : Swift.Error {
+  case urlError
+  case requestError(Foundation.Data?, Foundation.URLResponse?, Swift.Error)
+  case unknowError(Foundation.Data?, Foundation.URLResponse?, Swift.Error?)
+  case clientError(Foundation.Data, Foundation.HTTPURLResponse)
+  case serverError(Foundation.Data, Foundation.HTTPURLResponse)
+  case decodingError(Foundation.Data, Foundation.HTTPURLResponse, Swift.Error)
+  case otherError(Swift.Error)
+}
+public protocol FontRegistrable : Swift.RawRepresentable {
+  static var familyName: Swift.String { get }
+  static var useOnlyRawValueName: Swift.Bool { get }
+  static var bundle: Foundation.Bundle { get }
+  var name: Swift.String { get }
+  var fileType: Swift.String { get }
+  var asSystemFontWeight: UIKit.UIFont.Weight { get }
+  var pointsByScreenSize: CoreFoundation.CGFloat { get }
+  func maximumPointsToIncreaseSize(for style: UIKit.UIFont.TextStyle) -> CoreFoundation.CGFloat
+  func fontSize(for style: UIKit.UIFont.TextStyle) -> CoreFoundation.CGFloat
+  func fixedFont(size: CoreFoundation.CGFloat, tryToRegister: Swift.Bool) -> UIKit.UIFont
+  func font(_ style: UIKit.UIFont.TextStyle, size: CoreFoundation.CGFloat?) -> UIKit.UIFont
+}
+extension ArchitectLibrary.FontRegistrable where Self.RawValue == Swift.String {
+  public static var familyName: Swift.String {
+    get
+  }
+  public static var useOnlyRawValueName: Swift.Bool {
+    get
+  }
+  public static var bundle: Foundation.Bundle {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var fileType: Swift.String {
+    get
+  }
+  public var asSystemFontWeight: UIKit.UIFont.Weight {
+    get
+  }
+  public var pointsByScreenSize: CoreFoundation.CGFloat {
+    get
+  }
+  public func maximumPointsToIncreaseSize(for style: UIKit.UIFont.TextStyle) -> CoreFoundation.CGFloat
+  public func fontSize(for style: UIKit.UIFont.TextStyle) -> CoreFoundation.CGFloat
+  public func fixedFont(size: CoreFoundation.CGFloat, tryToRegister: Swift.Bool = true) -> UIKit.UIFont
+  public func font(_ style: UIKit.UIFont.TextStyle = .body, size: CoreFoundation.CGFloat? = nil) -> UIKit.UIFont
+}
+extension ArchitectLibrary.UICodeClickableView {
+  @_Concurrency.MainActor(unsafe) public func setupScrollableClickGesture(for scrollView: UIKit.UIScrollView? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UICodeClickableView : ArchitectLibrary.UICodeView {
+  @_Concurrency.MainActor(unsafe) public var touchUpInsideAction: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var highlightChangedAction: ((Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @objc deinit
+}
+extension ArchitectLibrary.UICodeClickableView : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+open class NotificationToken {
+  public init(notificationCenter: Foundation.NotificationCenter = .default, token: ObjectiveC.NSObjectProtocol)
+  @objc deinit
+}
+extension Foundation.NotificationCenter {
+  public func addTokenObserver(name: Foundation.NSNotification.Name?, object obj: Any?, queue: Foundation.OperationQueue?, using block: @escaping (Foundation.Notification) -> Swift.Void) -> ArchitectLibrary.NotificationToken
+}
+public protocol NotificationTokenObserver : AnyObject {
+  var notificationTokens: [ArchitectLibrary.NotificationToken] { get set }
+}
+extension ArchitectLibrary.NotificationTokenObserver {
+  public func addTokenObserver(name: Foundation.NSNotification.Name, object: Any? = nil, queue: Foundation.OperationQueue? = .main, using block: @escaping (Foundation.Notification) -> Swift.Void)
+}
+extension UIKit.NSLayoutConstraint {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func scaledConstant(for style: UIKit.UIFont.TextStyle = .body) -> ArchitectLibrary.NSCodeLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func scaledConstant(for style: UIKit.UIFont.TextStyle = .body, maxValue: CoreFoundation.CGFloat) -> ArchitectLibrary.NSCodeLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func scaledConstant(for style: UIKit.UIFont.TextStyle = .body, minValue: CoreFoundation.CGFloat) -> ArchitectLibrary.NSCodeLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setActive(_ isActive: Swift.Bool = true) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setPriority(_ priority: UIKit.UILayoutPriority) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setPriority(_ priority: Swift.Float) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setConstant(_ constant: CoreFoundation.CGFloat) -> Self
+}
+extension Foundation.JSONDecoder {
+  convenience public init(keyDecodingStrategy: Foundation.JSONDecoder.KeyDecodingStrategy, dateDecodingStrategy: Foundation.JSONDecoder.DateDecodingStrategy = .deferredToDate)
+}
+extension Swift.String {
+  public subscript(range: Swift.CountableRange<Swift.Int>) -> Swift.String {
+    get
+  }
+  public subscript(range: Swift.CountablePartialRangeFrom<Swift.Int>) -> Swift.String {
+    get
+  }
+  public static var newLine: Swift.String
+  public static let empty: Swift.String
+  public func capitalizingFirstLetter() -> Swift.String
+  public mutating func capitalizeFirstLetter()
+  public var url: Foundation.URL? {
+    get
+  }
+  public func matches(regex: Swift.String) -> Swift.Bool
+  @available(iOS 13.0, *)
+  public var sha256Hashed: Swift.String {
+    get
+  }
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func removeFromNavigation()
+  @_Concurrency.MainActor(unsafe) public func setTitle(hidden isHidden: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func executeInMainThread(_ execution: @escaping () -> Swift.Void)
+}
+public protocol Endpointing {
+  var baseURL: Swift.String { get }
+  var path: Swift.String { get }
+  var parameters: [Swift.String : Swift.String]? { get }
+  var cachePolicy: Foundation.URLRequest.CachePolicy { get }
+  var method: Swift.String { get }
+  var body: Foundation.Data? { get }
+  var headers: [Swift.String : Swift.String]? { get }
+}
+extension Foundation.URLRequest {
+  public func asCurlCommand() -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIPaddingTextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) open var padding: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func textRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func editingRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @objc deinit
+}
+public typealias DispatcherResponse = (data: Foundation.Data, response: Foundation.HTTPURLResponse)
+public typealias DispatcherResult = Swift.Result<ArchitectLibrary.DispatcherResponse, ArchitectLibrary.DispatcherError>
+public typealias DispatcherCompletion = (ArchitectLibrary.DispatcherResult) -> Swift.Void
+public protocol Dispatching {
+  var isLoggerEnabled: Swift.Bool { get set }
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
+  func call(endpoint: ArchitectLibrary.Endpointing) async throws -> ArchitectLibrary.DispatcherResponse
+  #endif
+  @discardableResult
+  func call(endpoint: ArchitectLibrary.Endpointing, completion: @escaping ArchitectLibrary.DispatcherCompletion) -> Foundation.URLSessionDataTask?
+}
+final public class Dispatcher : ArchitectLibrary.Dispatching {
+  final public let urlSession: Foundation.URLSession
+  final public var isLoggerEnabled: Swift.Bool
+  final public let logger: ArchitectLibrary.DispatcherLogging?
+  public init(urlSession: Foundation.URLSession, logger: ArchitectLibrary.DispatcherLogging?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
+  final public func call(endpoint: ArchitectLibrary.Endpointing) async throws -> ArchitectLibrary.DispatcherResponse
+  #endif
+  @discardableResult
+  final public func call(endpoint: ArchitectLibrary.Endpointing, completion: @escaping ArchitectLibrary.DispatcherCompletion) -> Foundation.URLSessionDataTask?
+  @objc deinit
+}
+extension ArchitectLibrary.UIContentScrollView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func contentSubviews(_ subViews: UIKit.UIView...) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func contentSubviews(_ subViews: [UIKit.UIView]) -> Self
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIContentScrollView<V> : UIKit.UIView where V : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var axis: UIKit.NSLayoutConstraint.Axis {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public let scrollView: UIKit.UIScrollView
+  @_Concurrency.MainActor(unsafe) final public let contentView: V
+  @_Concurrency.MainActor(unsafe) public init(_ axis: UIKit.NSLayoutConstraint.Axis)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect = .zero)
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIStackView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addArrangedSubviews(_ arrengedSubviews: UIKit.UIView...) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addArrangedSubviews(_ arrengedSubviews: [UIKit.UIView]) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func removeAllArrangedSubviews() -> [UIKit.UIView]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func dropArrangedSubview(_ view: UIKit.UIView) -> UIKit.UIView
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addArrangedSpacer(size: CoreFoundation.CGFloat, insertAt index: Swift.Int? = nil) -> UIKit.UIView
+  @_Concurrency.MainActor(unsafe) convenience public init(_ axis: UIKit.NSLayoutConstraint.Axis, alignment: UIKit.UIStackView.Alignment = .fill, distribution: UIKit.UIStackView.Distribution = .fill, spacing: CoreFoundation.CGFloat = 0)
+}
+extension Foundation.NSAttributedString {
+  public static func + (lhs: Foundation.NSAttributedString, rhs: Foundation.NSAttributedString) -> Foundation.NSAttributedString
+}
+open class LocalizedString {
+  public static var appLocale: Foundation.Locale
+  public static var defaultLocale: Foundation.Locale
+  open var localizedText: Swift.String {
+    get
+  }
+  public init(texts: [Swift.String : Swift.String] = [:])
+  @discardableResult
+  public func addText(_ key: Foundation.Locale, text: Swift.String) -> Self
+  @objc deinit
+}
+extension ArchitectLibrary.LocalizedString {
+  @discardableResult
+  public func enUS(_ text: Swift.String) -> Self
+  @discardableResult
+  public func ptBR(_ text: Swift.String) -> Self
+}
+@available(iOS 13.0, *)
+extension _Concurrency.Task where Failure == Swift.Error {
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  public func `catch`(_ handler: @escaping (_ error: Failure) async throws -> Swift.Void) -> _Concurrency.Task<Success, Failure>
+  #endif
+}
+extension Swift.Result {
+  public var success: Success? {
+    get
+  }
+  public var failure: Failure? {
+    get
+  }
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var isFailure: Swift.Bool {
+    get
+  }
+  @discardableResult
+  public func successHandler(_ handler: (Success) -> Swift.Void) -> Swift.Result<Success, Failure>
+  @discardableResult
+  public func failureHandler(_ handler: (Failure) -> Swift.Void) -> Swift.Result<Success, Failure>
+}
+final public class Box<T> {
+  public typealias Listener = (T) -> Swift.Void
+  final public var value: T {
+    get
+    set
+  }
+  public init(_ value: T)
+  final public func bind(_ listener: ArchitectLibrary.Box<T>.Listener?)
+  final public func fire()
+  final public func bindAndFire(listener: ArchitectLibrary.Box<T>.Listener?)
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public var original: UIKit.UIImage {
+    get
+  }
+  public var template: UIKit.UIImage {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) open class UIActionableGestureRecognizer : UIKit.UIGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) public init(action: @escaping (ArchitectLibrary.UIActionableGestureRecognizer) -> Swift.Void)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class UIActionableTapGestureRecognizer : UIKit.UITapGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) public init(action: @escaping (ArchitectLibrary.UIActionableTapGestureRecognizer) -> Swift.Void)
+  @objc deinit
+}
+extension UIKit.UIView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addGestureRecognizer(_ action: @escaping (ArchitectLibrary.UIActionableGestureRecognizer) -> Swift.Void) -> ArchitectLibrary.UIActionableGestureRecognizer
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addTapGestureRecognizer(_ action: @escaping (ArchitectLibrary.UIActionableTapGestureRecognizer) -> Swift.Void) -> ArchitectLibrary.UIActionableTapGestureRecognizer
+}
+extension Swift.Array {
+  public func first<T>(typeOf: T.Type) -> T?
+  public func element(at index: Swift.Array<Element>.Index) -> Element?
+  public subscript(safe index: Swift.Array<Element>.Index) -> Element? {
+    get
+  }
+  public func prefixSafe(upTo index: Swift.Array<Element>.Index) -> Swift.ArraySlice<Element>
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UICodeTextField : ArchitectLibrary.UIPaddingTextField {
+  @_Concurrency.MainActor(unsafe) public var characterLimit: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func setupCharacterLimit(limit: Swift.Int?)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setLimited(text aText: Swift.String) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public func editingChanged()
+  @objc deinit
+}
+extension QuartzCore.CALayer {
+  public func applyShadow(color: UIKit.UIColor, alpha: Swift.Float, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, blur: CoreFoundation.CGFloat, spread: CoreFoundation.CGFloat)
+}
+extension UIKit.UINavigationController {
+  public enum Style {
+    case transparent
+    case opaque
+    public static func == (a: UIKit.UINavigationController.Style, b: UIKit.UINavigationController.Style) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public func set(style: UIKit.UINavigationController.Style)
+}
+public protocol DispatcherLogging {
+  func logRequest(_ request: Foundation.URLRequest)
+  func logResponse(_ response: Foundation.URLResponse?, data: Foundation.Data?, error: Swift.Error?)
+}
+@_hasMissingDesignatedInitializers @available(iOS 14.0, macOS 11.0, watchOS 7.0, tvOS 14.0, *)
+final public class DispatcherLogger : ArchitectLibrary.DispatcherLogging {
+  final public func logRequest(_ request: Foundation.URLRequest)
+  final public func logResponse(_ response: Foundation.URLResponse?, data: Foundation.Data?, error: Swift.Error?)
+  @objc deinit
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) public func register<T>(_ cellClass: T.Type) where T : UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) public func dequeueReusableCell<T>(_ cellClass: T.Type, for indexPath: Foundation.IndexPath) -> T where T : UIKit.UICollectionViewCell
+}
+extension Foundation.Data {
+  public var jsonString: Swift.String? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UICodeView : UIKit.UIView, ArchitectLibrary.KeyValueObserved {
+  @_Concurrency.MainActor(unsafe) public var observers: [Foundation.NSKeyValueObservation] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func initSubviews()
+  @_Concurrency.MainActor(unsafe) open func initLayout()
+  @_Concurrency.MainActor(unsafe) open func initStyle()
+  @objc deinit
+}
+extension Foundation.DateFormatter {
+  convenience public init(_ dateFormat: Swift.String)
+}
+extension ArchitectLibrary.UIDecimalField.PlaceholderType : Swift.Equatable {}
+extension ArchitectLibrary.UIDecimalField.PlaceholderType : Swift.Hashable {}
+extension ArchitectLibrary.SwapRootVCAnimationType : Swift.Equatable {}
+extension ArchitectLibrary.SwapRootVCAnimationType : Swift.Hashable {}
+extension UIKit.UINavigationController.Style : Swift.Equatable {}
+extension UIKit.UINavigationController.Style : Swift.Hashable {}

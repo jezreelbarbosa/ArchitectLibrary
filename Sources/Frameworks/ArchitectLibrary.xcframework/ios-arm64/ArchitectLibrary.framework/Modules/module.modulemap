@@ -1,0 +1,11 @@
+framework module ArchitectLibrary {
+  umbrella header "ArchitectLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module ArchitectLibrary.Swift {
+  header "ArchitectLibrary-Swift.h"
+  requires objc
+}
