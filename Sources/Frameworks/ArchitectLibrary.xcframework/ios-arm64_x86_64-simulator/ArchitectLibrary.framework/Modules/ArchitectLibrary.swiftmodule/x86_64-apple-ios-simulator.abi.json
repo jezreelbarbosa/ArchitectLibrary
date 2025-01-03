@@ -1421,6 +1421,262 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UICodeViewController",
+        "printedName": "UICodeViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rootView",
+            "printedName": "rootView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16ArchitectLibrary20UICodeViewControllerC04rootD0xvp",
+            "mangledName": "$s16ArchitectLibrary20UICodeViewControllerC04rootD0xvp",
+            "moduleName": "ArchitectLibrary",
+            "declAttributes": [
+              "Custom",
+              "Lazy",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16ArchitectLibrary20UICodeViewControllerC04rootD0xvg",
+                "mangledName": "$s16ArchitectLibrary20UICodeViewControllerC04rootD0xvg",
+                "moduleName": "ArchitectLibrary",
+                "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView>",
+                "sugared_genericSig": "<V where V : UIKit.UIView>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UICodeViewController",
+                "printedName": "ArchitectLibrary.UICodeViewController<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:16ArchitectLibrary20UICodeViewControllerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16ArchitectLibrary20UICodeViewControllerC7nibName6bundleACyxGSSSg_So8NSBundleCSgtcfc",
+            "mangledName": "$s16ArchitectLibrary20UICodeViewControllerC7nibName6bundleACyxGSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "ArchitectLibrary",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView>",
+            "sugared_genericSig": "<V where V : UIKit.UIView>",
+            "overriding": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadView",
+            "printedName": "loadView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary20UICodeViewControllerC04loadD0yyF",
+            "mangledName": "$s16ArchitectLibrary20UICodeViewControllerC04loadD0yyF",
+            "moduleName": "ArchitectLibrary",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView>",
+            "sugared_genericSig": "<V where V : UIKit.UIView>",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "loadView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initViewController",
+            "printedName": "initViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary20UICodeViewControllerC04initdE0yyF",
+            "mangledName": "$s16ArchitectLibrary20UICodeViewControllerC04initdE0yyF",
+            "moduleName": "ArchitectLibrary",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView>",
+            "sugared_genericSig": "<V where V : UIKit.UIView>",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16ArchitectLibrary20UICodeViewControllerC",
+        "mangledName": "$s16ArchitectLibrary20UICodeViewControllerC",
+        "moduleName": "ArchitectLibrary",
+        "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView>",
+        "sugared_genericSig": "<V where V : UIKit.UIView>",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ArchitectLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ContentSizeObserver",
         "printedName": "ContentSizeObserver",
         "children": [
