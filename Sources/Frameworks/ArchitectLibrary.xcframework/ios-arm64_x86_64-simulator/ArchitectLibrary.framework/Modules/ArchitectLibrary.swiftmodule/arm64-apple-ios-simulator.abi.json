@@ -13746,7 +13746,7 @@
           {
             "kind": "Function",
             "name": "setImage",
-            "printedName": "setImage(from:completion:)",
+            "printedName": "setImage(from:withLoading:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13770,6 +13770,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "((UIKit.UIImage?) -> ())?",
                 "children": [
@@ -13805,8 +13812,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from10completionSo20NSURLSessionDataTaskCSgSS_ySo0A0CSgcSgtF",
-            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from10completionSo20NSURLSessionDataTaskCSgSS_ySo0A0CSgcSgtF",
+            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskCSgSS_SbySo0A0CSgcSgtF",
+            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskCSgSS_SbySo0A0CSgcSgtF",
             "moduleName": "ArchitectLibrary",
             "declAttributes": [
               "Custom",
@@ -13819,7 +13826,7 @@
           {
             "kind": "Function",
             "name": "setImage",
-            "printedName": "setImage(from:completion:)",
+            "printedName": "setImage(from:withLoading:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13835,6 +13842,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "((UIKit.UIImage?) -> ())?",
                 "children": [
@@ -13870,8 +13884,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from10completionSo20NSURLSessionDataTaskC10Foundation3URLV_ySo0A0CSgcSgtF",
-            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from10completionSo20NSURLSessionDataTaskC10Foundation3URLV_ySo0A0CSgcSgtF",
+            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskC10Foundation3URLV_SbySo0A0CSgcSgtF",
+            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskC10Foundation3URLV_SbySo0A0CSgcSgtF",
             "moduleName": "ArchitectLibrary",
             "declAttributes": [
               "Custom",
@@ -19647,6 +19661,20 @@
       "offset": 377,
       "length": 4,
       "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Extensions\/UIImageView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 229,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Extensions\/UIImageView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 679,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Components\/FontRegistrable.swift",

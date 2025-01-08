@@ -231,9 +231,9 @@ public protocol KeyValueObserved {
 }
 extension UIKit.UIImageView {
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setImage(from urlString: Swift.String, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask?
+  @_Concurrency.MainActor(unsafe) public func setImage(from urlString: Swift.String, withLoading: Swift.Bool = false, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask?
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setImage(from url: Foundation.URL, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask
+  @_Concurrency.MainActor(unsafe) public func setImage(from url: Foundation.URL, withLoading: Swift.Bool = false, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask
   @_Concurrency.MainActor(unsafe) public func setImage(from data: Foundation.Data, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil)
   @discardableResult
   @_Concurrency.MainActor(unsafe) public static func downloadImage(from url: Foundation.URL, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask
