@@ -13746,7 +13746,7 @@
           {
             "kind": "Function",
             "name": "setImage",
-            "printedName": "setImage(from:withLoading:completion:)",
+            "printedName": "setImage(from:hasLoading:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13812,8 +13812,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskCSgSS_SbySo0A0CSgcSgtF",
-            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskCSgSS_SbySo0A0CSgcSgtF",
+            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from10hasLoading10completionSo20NSURLSessionDataTaskCSgSS_SbySo0A0CSgcSgtF",
+            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from10hasLoading10completionSo20NSURLSessionDataTaskCSgSS_SbySo0A0CSgcSgtF",
             "moduleName": "ArchitectLibrary",
             "declAttributes": [
               "Custom",
@@ -13826,7 +13826,7 @@
           {
             "kind": "Function",
             "name": "setImage",
-            "printedName": "setImage(from:withLoading:completion:)",
+            "printedName": "setImage(from:hasLoading:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13884,8 +13884,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskC10Foundation3URLV_SbySo0A0CSgcSgtF",
-            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from11withLoading10completionSo20NSURLSessionDataTaskC10Foundation3URLV_SbySo0A0CSgcSgtF",
+            "usr": "s:So11UIImageViewC16ArchitectLibraryE8setImage4from10hasLoading10completionSo20NSURLSessionDataTaskC10Foundation3URLV_SbySo0A0CSgcSgtF",
+            "mangledName": "$sSo11UIImageViewC16ArchitectLibraryE8setImage4from10hasLoading10completionSo20NSURLSessionDataTaskC10Foundation3URLV_SbySo0A0CSgcSgtF",
             "moduleName": "ArchitectLibrary",
             "declAttributes": [
               "Custom",
@@ -19665,14 +19665,14 @@
     {
       "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Extensions\/UIImageView+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 229,
+      "offset": 228,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Extensions\/UIImageView+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 679,
+      "offset": 675,
       "length": 5,
       "value": "false"
     },
