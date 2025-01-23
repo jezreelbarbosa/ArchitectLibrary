@@ -257,7 +257,6 @@ using UInt = size_t;
 
 
 
-
 SWIFT_CLASS("_TtC16ArchitectLibrary22NSCodeLayoutConstraint")
 @interface NSCodeLayoutConstraint : NSLayoutConstraint
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

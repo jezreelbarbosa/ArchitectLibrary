@@ -36,6 +36,7 @@ extension UIKit.UIView {
   @discardableResult
   @_Concurrency.MainActor(unsafe) public func contentHugging(_ priority: UIKit.UILayoutPriority, for axis: UIKit.NSLayoutConstraint.Axis...) -> Self
   @_Concurrency.MainActor(unsafe) public func makeRoundBordersObserver() -> Foundation.NSKeyValueObservation
+  @_Concurrency.MainActor(unsafe) public func applyShadowObsever(color: UIKit.UIColor, alpha: Swift.Float, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, blur: CoreFoundation.CGFloat, spread: CoreFoundation.CGFloat, cornerRadius: CoreFoundation.CGFloat) -> Foundation.NSKeyValueObservation
   @_Concurrency.MainActor(unsafe) public func setTapToEndEditing()
 }
 public protocol Reversable {
@@ -544,9 +545,6 @@ extension Swift.Array {
   @_Concurrency.MainActor(unsafe) public func setLimited(text aText: Swift.String) -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public func editingChanged()
   @objc deinit
-}
-extension QuartzCore.CALayer {
-  public func applyShadow(color: UIKit.UIColor, alpha: Swift.Float, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, blur: CoreFoundation.CGFloat, spread: CoreFoundation.CGFloat)
 }
 extension UIKit.UINavigationController {
   public enum Style {
