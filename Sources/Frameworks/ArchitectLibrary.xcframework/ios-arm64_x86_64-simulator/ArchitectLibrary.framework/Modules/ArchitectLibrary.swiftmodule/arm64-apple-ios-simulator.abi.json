@@ -13225,14 +13225,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:So7UIColorC16ArchitectLibraryE3rgbABs6UInt32V_tcfc",
-            "mangledName": "$sSo7UIColorC16ArchitectLibraryE3rgbABs6UInt32V_tcfc",
+            "usr": "s:So7UIColorC16ArchitectLibraryE3rgbABs6UInt64V_tcfc",
+            "mangledName": "$sSo7UIColorC16ArchitectLibraryE3rgbABs6UInt64V_tcfc",
             "moduleName": "ArchitectLibrary",
             "declAttributes": [
               "Convenience"
@@ -13253,14 +13253,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:So7UIColorC16ArchitectLibraryE4rgbaABs6UInt32V_tcfc",
-            "mangledName": "$sSo7UIColorC16ArchitectLibraryE4rgbaABs6UInt32V_tcfc",
+            "usr": "s:So7UIColorC16ArchitectLibraryE4rgbaABs6UInt64V_tcfc",
+            "mangledName": "$sSo7UIColorC16ArchitectLibraryE4rgbaABs6UInt64V_tcfc",
             "moduleName": "ArchitectLibrary",
             "declAttributes": [
               "Convenience"
@@ -13403,20 +13403,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So7UIColorC16ArchitectLibraryE10dynamicRGB3any4darkABSgs6UInt32V_AItFZ",
-            "mangledName": "$sSo7UIColorC16ArchitectLibraryE10dynamicRGB3any4darkABSgs6UInt32V_AItFZ",
+            "usr": "s:So7UIColorC16ArchitectLibraryE10dynamicRGB3any4darkABSgs6UInt64V_AItFZ",
+            "mangledName": "$sSo7UIColorC16ArchitectLibraryE10dynamicRGB3any4darkABSgs6UInt64V_AItFZ",
             "moduleName": "ArchitectLibrary",
             "static": true,
             "declAttributes": [
@@ -13446,20 +13446,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So7UIColorC16ArchitectLibraryE11dynamicRGBA3any4darkABSgs6UInt32V_AItFZ",
-            "mangledName": "$sSo7UIColorC16ArchitectLibraryE11dynamicRGBA3any4darkABSgs6UInt32V_AItFZ",
+            "usr": "s:So7UIColorC16ArchitectLibraryE11dynamicRGBA3any4darkABSgs6UInt64V_AItFZ",
+            "mangledName": "$sSo7UIColorC16ArchitectLibraryE11dynamicRGBA3any4darkABSgs6UInt64V_AItFZ",
             "moduleName": "ArchitectLibrary",
             "static": true,
             "declAttributes": [
