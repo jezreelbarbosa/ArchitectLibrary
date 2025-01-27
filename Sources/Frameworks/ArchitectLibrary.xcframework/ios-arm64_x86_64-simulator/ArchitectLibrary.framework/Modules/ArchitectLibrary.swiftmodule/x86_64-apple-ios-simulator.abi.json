@@ -6828,6 +6828,290 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ArchitectLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UICodeTableViewCell",
+        "printedName": "UICodeTableViewCell",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "observers",
+            "printedName": "observers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSKeyValueObservation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSKeyValueObservation",
+                    "printedName": "Foundation.NSKeyValueObservation",
+                    "usr": "c:@M@Foundation@objc(cs)_NSKeyValueObservation"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvp",
+            "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvp",
+            "moduleName": "ArchitectLibrary",
+            "declAttributes": [
+              "Custom",
+              "Lazy",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSKeyValueObservation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueObservation",
+                        "printedName": "Foundation.NSKeyValueObservation",
+                        "usr": "c:@M@Foundation@objc(cs)_NSKeyValueObservation"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvg",
+                "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvg",
+                "moduleName": "ArchitectLibrary",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSKeyValueObservation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueObservation",
+                        "printedName": "Foundation.NSKeyValueObservation",
+                        "usr": "c:@M@Foundation@objc(cs)_NSKeyValueObservation"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvs",
+                "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvs",
+                "moduleName": "ArchitectLibrary",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvM",
+                "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC9observersSay10Foundation21NSKeyValueObservationCGvM",
+                "moduleName": "ArchitectLibrary",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initSubviews",
+            "printedName": "initSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary19UICodeTableViewCellC12initSubviewsyyF",
+            "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC12initSubviewsyyF",
+            "moduleName": "ArchitectLibrary",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initLayout",
+            "printedName": "initLayout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary19UICodeTableViewCellC10initLayoutyyF",
+            "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC10initLayoutyyF",
+            "moduleName": "ArchitectLibrary",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initStyle",
+            "printedName": "initStyle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary19UICodeTableViewCellC9initStyleyyF",
+            "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC9initStyleyyF",
+            "moduleName": "ArchitectLibrary",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ArchitectLibrary@objc(cs)UICodeTableViewCell",
+        "mangledName": "$s16ArchitectLibrary19UICodeTableViewCellC",
+        "moduleName": "ArchitectLibrary",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UITableViewCell",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UITableViewCell",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KeyValueObserved",
+            "printedName": "KeyValueObserved",
+            "usr": "s:16ArchitectLibrary16KeyValueObservedP",
+            "mangledName": "$s16ArchitectLibrary16KeyValueObservedP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7961,6 +8245,324 @@
         "moduleName": "ArchitectLibrary",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ArchitectLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UICodeCollectionViewCell",
+        "printedName": "UICodeCollectionViewCell",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "observers",
+            "printedName": "observers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSKeyValueObservation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSKeyValueObservation",
+                    "printedName": "Foundation.NSKeyValueObservation",
+                    "usr": "c:@M@Foundation@objc(cs)_NSKeyValueObservation"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvp",
+            "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvp",
+            "moduleName": "ArchitectLibrary",
+            "declAttributes": [
+              "Custom",
+              "Lazy",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSKeyValueObservation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueObservation",
+                        "printedName": "Foundation.NSKeyValueObservation",
+                        "usr": "c:@M@Foundation@objc(cs)_NSKeyValueObservation"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvg",
+                "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvg",
+                "moduleName": "ArchitectLibrary",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSKeyValueObservation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueObservation",
+                        "printedName": "Foundation.NSKeyValueObservation",
+                        "usr": "c:@M@Foundation@objc(cs)_NSKeyValueObservation"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvs",
+                "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvs",
+                "moduleName": "ArchitectLibrary",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvM",
+                "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC9observersSay10Foundation21NSKeyValueObservationCGvM",
+                "moduleName": "ArchitectLibrary",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UICodeCollectionViewCell",
+                "printedName": "ArchitectLibrary.UICodeCollectionViewCell",
+                "usr": "c:@M@ArchitectLibrary@objc(cs)UICodeCollectionViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ArchitectLibrary@objc(cs)UICodeCollectionViewCell(im)initWithFrame:",
+            "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC5frameACSo6CGRectV_tcfc",
+            "moduleName": "ArchitectLibrary",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initSubviews",
+            "printedName": "initSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary24UICodeCollectionViewCellC12initSubviewsyyF",
+            "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC12initSubviewsyyF",
+            "moduleName": "ArchitectLibrary",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initLayout",
+            "printedName": "initLayout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary24UICodeCollectionViewCellC10initLayoutyyF",
+            "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC10initLayoutyyF",
+            "moduleName": "ArchitectLibrary",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initStyle",
+            "printedName": "initStyle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ArchitectLibrary24UICodeCollectionViewCellC9initStyleyyF",
+            "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC9initStyleyyF",
+            "moduleName": "ArchitectLibrary",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ArchitectLibrary@objc(cs)UICodeCollectionViewCell",
+        "mangledName": "$s16ArchitectLibrary24UICodeCollectionViewCellC",
+        "moduleName": "ArchitectLibrary",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UICollectionViewCell",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UICollectionViewCell",
+          "UIKit.UICollectionReusableView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KeyValueObserved",
+            "printedName": "KeyValueObserved",
+            "usr": "s:16ArchitectLibrary16KeyValueObservedP",
+            "mangledName": "$s16ArchitectLibrary16KeyValueObservedP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       },
       {
@@ -19632,6 +20234,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Components\/UICodeTableViewCell.swift",
+      "kind": "Array",
+      "offset": 263,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Components\/Dispatcher\/Dispatcher.swift",
       "kind": "BooleanLiteral",
       "offset": 810,
@@ -19651,6 +20260,13 @@
       "offset": 1731,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Components\/UICodeCollectionViewCell.swift",
+      "kind": "Array",
+      "offset": 278,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/architect\/Xcode Projects\/Personal\/ArchitectLibrary\/ArchitectLibrary\/Components\/LocalizedString.swift",

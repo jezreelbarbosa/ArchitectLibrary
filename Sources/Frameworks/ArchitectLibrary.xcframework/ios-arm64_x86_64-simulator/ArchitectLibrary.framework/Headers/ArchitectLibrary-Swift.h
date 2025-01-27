@@ -299,11 +299,26 @@ SWIFT_CLASS("_TtC16ArchitectLibrary19UICodeClickableView")
 @end
 
 
+SWIFT_CLASS("_TtC16ArchitectLibrary24UICodeCollectionViewCell")
+@interface UICodeCollectionViewCell : UICollectionViewCell
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC16ArchitectLibrary22UICodeSegmentedControl")
 @interface UICodeSegmentedControl : UISegmentedControl
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithItems:(NSArray * _Nullable)items OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSString;
+
+SWIFT_CLASS("_TtC16ArchitectLibrary19UICodeTableViewCell")
+@interface UICodeTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
 @end
 
 
@@ -665,11 +680,26 @@ SWIFT_CLASS("_TtC16ArchitectLibrary19UICodeClickableView")
 @end
 
 
+SWIFT_CLASS("_TtC16ArchitectLibrary24UICodeCollectionViewCell")
+@interface UICodeCollectionViewCell : UICollectionViewCell
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC16ArchitectLibrary22UICodeSegmentedControl")
 @interface UICodeSegmentedControl : UISegmentedControl
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithItems:(NSArray * _Nullable)items OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSString;
+
+SWIFT_CLASS("_TtC16ArchitectLibrary19UICodeTableViewCell")
+@interface UICodeTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
 @end
 
 

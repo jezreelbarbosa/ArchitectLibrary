@@ -391,6 +391,18 @@ extension Foundation.URLRequest {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func editingRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class UICodeTableViewCell : UIKit.UITableViewCell, ArchitectLibrary.KeyValueObserved {
+  @_Concurrency.MainActor(unsafe) public var observers: [Foundation.NSKeyValueObservation] {
+    get
+    set
+  }
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func initSubviews()
+  @_Concurrency.MainActor(unsafe) open func initLayout()
+  @_Concurrency.MainActor(unsafe) open func initStyle()
+  @objc deinit
+}
 public typealias DispatcherResponse = (data: Foundation.Data, response: Foundation.HTTPURLResponse)
 public typealias DispatcherResult = Swift.Result<ArchitectLibrary.DispatcherResponse, ArchitectLibrary.DispatcherError>
 public typealias DispatcherCompletion = (ArchitectLibrary.DispatcherResult) -> Swift.Void
@@ -450,6 +462,19 @@ extension UIKit.UIStackView {
 }
 extension Foundation.NSAttributedString {
   public static func + (lhs: Foundation.NSAttributedString, rhs: Foundation.NSAttributedString) -> Foundation.NSAttributedString
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UICodeCollectionViewCell : UIKit.UICollectionViewCell, ArchitectLibrary.KeyValueObserved {
+  @_Concurrency.MainActor(unsafe) public var observers: [Foundation.NSKeyValueObservation] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func initSubviews()
+  @_Concurrency.MainActor(unsafe) open func initLayout()
+  @_Concurrency.MainActor(unsafe) open func initStyle()
+  @objc deinit
 }
 open class LocalizedString {
   public static var appLocale: Foundation.Locale
