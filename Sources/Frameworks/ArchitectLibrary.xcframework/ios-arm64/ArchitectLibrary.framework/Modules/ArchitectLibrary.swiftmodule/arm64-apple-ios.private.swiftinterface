@@ -143,9 +143,14 @@ extension UIKit.UIColor {
   convenience public init(rgba: Swift.UInt64)
   convenience public init?(string: Swift.String)
   public static func dynamic(any anyColor: UIKit.UIColor, dark darkColor: UIKit.UIColor) -> UIKit.UIColor
-  public static func dynamicString(any anyColor: Swift.String, dark darkColor: Swift.String) -> UIKit.UIColor?
+  public static func dynamic(any anyColor: Swift.String, dark darkColor: Swift.String) -> UIKit.UIColor?
   public static func dynamicRGB(any anyColor: Swift.UInt64, dark darkColor: Swift.UInt64) -> UIKit.UIColor?
   public static func dynamicRGBA(any anyColor: Swift.UInt64, dark darkColor: Swift.UInt64) -> UIKit.UIColor?
+}
+extension Swift.String {
+  public var uiColor: UIKit.UIColor? {
+    get
+  }
 }
 @_Concurrency.MainActor(unsafe) open class UIContentStackScrollView : ArchitectLibrary.UIContentScrollView<UIKit.UIStackView> {
   @_Concurrency.MainActor(unsafe) override open var axis: UIKit.NSLayoutConstraint.Axis {
